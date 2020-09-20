@@ -1,6 +1,9 @@
 package seedu.address.logic.commands;
 
+import static seedu.address.testutil.TypicalIndexes.INDEX_FIRST_PERSON;
+
 import org.junit.jupiter.api.Test;
+
 import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
 import seedu.address.model.UserPrefs;
@@ -9,11 +12,9 @@ import seedu.address.model.person.Remark;
 import seedu.address.testutil.PersonBuilder;
 import seedu.address.testutil.TypicalPersons;
 
-import static seedu.address.testutil.TypicalIndexes.INDEX_FIRST_PERSON;
-
 class RemarkCommandTest {
 
-    private final String REMARK_STUB = "THIS IS A STUB";
+    public static final String REMARK_STUB = "THIS IS A STUB";
     private Model model = new ModelManager(TypicalPersons.getTypicalAddressBook(), new UserPrefs());
 
     @Test
